@@ -2,10 +2,10 @@ using System.Text.Json;
 
 static class ClientList
 {
-    private static List<Client> Clients = new List<Client>();
+    private static List<Cliente> Clients = new List<Cliente>();
 
     // Insere um novo cliente
-    public static void Insert(Client client)
+    public static void AddCliente(Cliente client)
     {
         Open();
 
@@ -21,11 +21,11 @@ static class ClientList
     }
 
     // Deleta um cliente pelo ID
-    public static void Delete(int id)
+    public static void DelCliente(int id)
     {
         Open();
 
-        Client client = null;
+        Cliente client = null;
         foreach (var c in Clients)
         {
             if (c.id == id)
@@ -43,18 +43,18 @@ static class ClientList
     }
 
     // Lista todos os clientes
-    public static List<Client> ListAll()
+    public static List<Cliente> ListarClientes()
     {
         Open();
         return Clients;
     }
 
     // Atualiza os dados de um cliente
-    public static void Update(Client client)
+    public static void AttCliente(Cliente client)
     {
         Open();
 
-        Client existingClient = null;
+        Cliente existingClient = null;
         foreach (var c in Clients)
         {
             if (c.id == client.id)
@@ -68,10 +68,10 @@ static class ClientList
             throw new Exception("Cliente não encontrado!");
 
         // Atualizar dados
-        existingClient.name = client.name;
+        existingClient.nome = client.nome;
         existingClient.email = client.email;
-        existingClient.phone = client.phone;
-        existingClient.password = client.password;
+        existingClient.telefone = client.telefone;
+        existingClient.senha = client.senha;
         Close();
     }
 
@@ -83,7 +83,7 @@ static class ClientList
             try
             {
                 string data = File.ReadAllText("ClientList.json");
-                Clients = JsonSerializer.Deserialize<List<Client>>(data) ?? new List<Client>();
+                Clients = JsonSerializer.Deserialize<List<Cliente>>(data) ?? new List<Cliente>();
             }
             catch (Exception ex)
             {
@@ -107,33 +107,26 @@ static class ClientList
     }
 }
 
-class Client
+class Cliente
 {
     public int id { get; set; }
-    public string name { get; set; }
+    public string nome { get; set; }
     public string email { get; set; }
-    public string phone { get; set; }
-    public string password;
+    public string telefone { get; set; }
+    public string senha{get;set; } 
+    public Cliente() { }
 
-    public string Password
-    {
-        get => "******"; // Expor apenas asteriscos
-        set => password = value; 
-    }
-
-    public Client() { }
-
-    public Client(int id, string name, string email, string phone, string password)
+    public Cliente(int id, string nome, string email, string telefone, string senha)
     {
         this.id = id;
-        this.name = name;
+        this.nome = nome;
         this.email = email;
-        this.phone = phone;
-        this.password = password;
+        this.telefone = telefone;
+        this.senha = senha;
     }
 
     public override string ToString()
     {
-        return $"ID: {id}\nNome: {name}\nEmail: {email}\nTelefone: {phone}";
+        return $"ID: {id}\nNome: {nome}\nEmail: {email}\nTelefone: {telefone}";
     }
 }
