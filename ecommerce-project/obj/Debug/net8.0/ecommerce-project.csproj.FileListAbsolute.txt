@@ -1,0 +1,15 @@
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\bin\Debug\net8.0\ecommerce-project.exe
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\bin\Debug\net8.0\ecommerce-project.deps.json
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\bin\Debug\net8.0\ecommerce-project.runtimeconfig.json
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\bin\Debug\net8.0\ecommerce-project.dll
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\bin\Debug\net8.0\ecommerce-project.pdb
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.AssemblyInfoInputs.cache
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.AssemblyInfo.cs
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.sourcelink.json
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.dll
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\refint\ecommerce-project.dll
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.pdb
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ecommerce-project.genruntimeconfig.cache
+C:\Users\Bruno Dias\Desktop\ecommerce_cs\ecommerce-project\obj\Debug\net8.0\ref\ecommerce-project.dll
